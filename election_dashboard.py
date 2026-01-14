@@ -11,13 +11,13 @@ with open('thailand_election_forecast.json', 'r', encoding='utf-8') as f:
 
 # Party colors
 party_colors = {
-    "People's Party": "#FF6B35",
-    "Bhumjaithai Party": "#4CAF50", 
-    "Pheu Thai Party": "#E53935",
-    "Democrat Party": "#2196F3",
-    "Kla Tham Party": "#9C27B0",
-    "United Thai Nation Party": "#00BCD4",
-    "Palang Pracharath Party": "#3F51B5",
+    "People's Party": "#FF6F00",
+    "Bhumjaithai Party": "#1E3A8A", 
+    "Pheu Thai Party": "#C62828",
+    "Democrat Party": "#1976D2",
+    "Kla Tham Party": "#2E7D32",
+    "United Thai Nation Party": "#64B5F6",
+    "Palang Pracharath Party": "#1B5E20",
     "Other Parties Combined": "#9E9E9E"
 }
 
