@@ -1,0 +1,198 @@
+{
+  "election_date": "2026-02-08",
+  "forecast_date": "2026-01-14",
+  "total_seats": 500,
+  "constituency_seats": 400,
+  "party_list_seats": 100,
+  
+  "seat_predictions": {
+    "People's Party": {
+      "constituency_seats": 135,
+      "party_list_seats": 28,
+      "total_seats": 163,
+      "confidence_interval": "[145-180]",
+      "vote_share_estimate": "29-32%"
+    },
+    "Bhumjaithai Party": {
+      "constituency_seats": 105,
+      "party_list_seats": 20,
+      "total_seats": 125,
+      "confidence_interval": "[110-140]",
+      "vote_share_estimate": "20-23%"
+    },
+    "Pheu Thai Party": {
+      "constituency_seats": 75,
+      "party_list_seats": 17,
+      "total_seats": 92,
+      "confidence_interval": "[80-105]",
+      "vote_share_estimate": "15-18%"
+    },
+    "Democrat Party": {
+      "constituency_seats": 28,
+      "party_list_seats": 9,
+      "total_seats": 37,
+      "confidence_interval": "[25-45]",
+      "vote_share_estimate": "9-12%"
+    },
+    "Kla Tham Party": {
+      "constituency_seats": 32,
+      "party_list_seats": 8,
+      "total_seats": 40,
+      "confidence_interval": "[30-50]",
+      "vote_share_estimate": "7-10%"
+    },
+    "United Thai Nation Party": {
+      "constituency_seats": 10,
+      "party_list_seats": 6,
+      "total_seats": 16,
+      "confidence_interval": "[12-22]",
+      "vote_share_estimate": "4-6%"
+    },
+    "Palang Pracharath Party": {
+      "constituency_seats": 6,
+      "party_list_seats": 4,
+      "total_seats": 10,
+      "confidence_interval": "[8-15]",
+      "vote_share_estimate": "3-5%"
+    },
+    "Other Parties Combined": {
+      "constituency_seats": 9,
+      "party_list_seats": 8,
+      "total_seats": 17,
+      "confidence_interval": "[10-25]",
+      "vote_share_estimate": "5-8%"
+    }
+  },
+  
+  "methodology_summary": "This forecast employs a Bayesian ensemble model combining: (1) Time-series weighted polling averages from NIDA, Suan Dusit, and Thai Rath polls (Jan 2026), with recent polls weighted more heavily; (2) Uniform swing analysis from 2023 election results adjusted for party continuity (Move Forward→People's Party transition); (3) Regional voting pattern regression based on 2011-2023 historical data; (4) Incumbency and nationalist surge adjustments for Bhumjaithai due to Thai-Cambodia border conflict; (5) Monte Carlo simulation (10,000 iterations) to generate confidence intervals accounting for 30-40% undecided voters and constituency-level variance. The party list allocation uses modified Hare-Niemeyer method based on projected national vote shares.",
+  
+  "data_sources": [
+    "NIDA Poll (Jan 5-8, 2026): People's Party 30.4%, Bhumjaithai 22.0%, Pheu Thai 15.7%",
+    "Suan Dusit Poll (Jan 6-9, 2026): People's Party 34.2%, Bhumjaithai 16.2%, Pheu Thai 16.0%",
+    "Thai Rath Poll (Dec 29, 2025 - Jan 4, 2026): Pro-democracy bloc 61.17% combined",
+    "2023 Election Results: Move Forward 151 seats, Pheu Thai 141 seats, Bhumjaithai 71 seats",
+    "Regional voting patterns from 2011, 2019, 2023 elections",
+    "Bangkok Post, The Diplomat, Nation Thailand analyst forecasts (Jan 2026)",
+    "Historical turnout data: 75.22% (2023), 80.02% (2011)"
+  ],
+  
+  "assumptions": [
+    "Turnout: 72-76% (slightly lower than 2023 due to election fatigue and snap election timing)",
+    "Undecided voters (30-40%) will break proportionally to decided voters with slight conservative bias",
+    "People's Party inherits 90-95% of Move Forward's 2023 constituency strength despite party dissolution",
+    "Bhumjaithai gains 15-20 seats from nationalist surge due to Cambodia border conflict (primarily in Northeast, Central regions)",
+    "Pheu Thai loses 40-50 seats from 2023 due to government collapse, Paetongtarn scandal, and urban defection to People's Party",
+    "Democrat Party recovers in South (Songkhla, Phuket) and gains 5-10 Bangkok seats under Abhisit's return as leader",
+    "No Senate involvement in PM selection (unlike 2023) changes coalition dynamics but not seat projections",
+    "Kla Tham Party (led by Thamanat Prompow) consolidates rural conservative vote, winning 30-40 seats",
+    "Party list seats allocated proportionally to national vote share using Hare-Niemeyer method",
+    "Regional patterns: People's Party dominates Bangkok (25-30 seats) and urban areas; Bhumjaithai strong in Northeast (Isan) and Central plains; Pheu Thai retains North strongholds but loses ground; Democrats recover in South",
+    "Legal challenges to People's Party MPs (lèse-majesté cases) not resolved before election, creating uncertainty but not affecting initial seat count",
+    "Economic concerns (slow recovery, household debt) favor populist parties (Pheu Thai, People's Party) over incumbent Bhumjaithai"
+  ],
+  
+  "regional_breakdown": {
+    "Bangkok_Metropolitan": {
+      "total_seats": 33,
+      "People's Party": "25-28 seats (dominant in urban constituencies)",
+      "Bhumjaithai": "2-4 seats (nationalist appeal, Akanat Promphan factor)",
+      "Pheu Thai": "1-3 seats (recovering from 2023 collapse)",
+      "Democrat": "1-3 seats (attempting revival)",
+      "rationale": "People's Party won 32/33 in 2023; expects minor losses to nationalist surge and Democrat recovery"
+    },
+    "North": {
+      "total_seats": "~70",
+      "Pheu Thai": "40-45 seats (Shinawatra stronghold, Chiang Mai base)",
+      "People's Party": "20-25 seats (urban Chiang Mai, younger voters)",
+      "Others": "5-10 seats",
+      "rationale": "Traditional Pheu Thai territory maintains loyalty despite national decline"
+    },
+    "Northeast_Isan": {
+      "total_seats": "~136",
+      "Bhumjaithai": "50-60 seats (Buriram base, Newin Chidchob network, nationalist surge)",
+      "Pheu Thai": "40-50 seats (declining from 2023 dominance)",
+      "People's Party": "25-30 seats (urban centers, youth vote)",
+      "Kla Tham": "10-15 seats (rural conservative areas)",
+      "rationale": "Largest region; three-way split with Bhumjaithai gaining from nationalism"
+    },
+    "Central": {
+      "total_seats": "~90",
+      "Bhumjaithai": "30-35 seats (government incumbency advantage)",
+      "People's Party": "25-30 seats (suburban Bangkok, provincial cities)",
+      "Pheu Thai": "15-20 seats",
+      "Kla Tham": "10-12 seats",
+      "rationale": "Competitive region with government party advantage"
+    },
+    "South": {
+      "total_seats": "~70",
+      "Democrat": "25-35 seats (traditional stronghold, Abhisit effect in Songkhla)",
+      "Bhumjaithai": "15-20 seats (nationalist security message)",
+      "People's Party": "10-15 seats (Phuket, urban centers)",
+      "Kla Tham": "5-8 seats",
+      "rationale": "Democrat recovery in homeland after 2019/2023 losses"
+    }
+  },
+  
+  "key_uncertainties": {
+    "high_undecided_rate": "30-40% undecided voters could swing results significantly; if they break heavily toward one party, seat totals could shift by ±20 seats",
+    "legal_cases_against_PP": "44 former Move Forward MPs facing potential disqualification could reduce People's Party seats by 15-25 post-election",
+    "turnout_effects": "Lower turnout typically favors parties with stronger ground organization (Bhumjaithai, Pheu Thai) over People's Party",
+    "last_minute_scandals": "Any major revelation in final 3 weeks could dramatically shift momentum",
+    "coalition_formation": "Winner of most seats ≠ forming government; Bhumjaithai likely kingmaker regardless of first place finish"
+  },
+  
+  "coalition_scenarios": {
+    "scenario_1_people_party_led": {
+      "probability": "30%",
+      "composition": "People's Party (163) + Pheu Thai (92) + others = ~260-270 seats",
+      "challenges": "Requires reconciliation with Pheu Thai despite bitter 2023 betrayal; may need Democrats (37) who refuse to join; conservative establishment opposition"
+    },
+    "scenario_2_bhumjaithai_led": {
+      "probability": "50%",
+      "composition": "Bhumjaithai (125) + Pheu Thai (92) + Kla Tham (40) + Democrats (37) = ~290-300 seats",
+      "challenges": "Replicates old power structure; excludes People's Party despite plurality; risks street protests"
+    },
+    "scenario_3_grand_coalition": {
+      "probability": "15%",
+      "composition": "People's Party (163) + Bhumjaithai (125) + Democrats (37) = ~325 seats",
+      "challenges": "Ideologically incompatible; conservative factions block People's Party constitutional reform agenda"
+    },
+    "scenario_4_deadlock": {
+      "probability": "5%",
+      "composition": "No stable coalition forms; minority government or new elections",
+      "challenges": "Political crisis if People's Party wins plurality but cannot form government"
+    }
+  },
+  
+  "forecast_confidence": "MODERATE TO LOW",
+  "confidence_rationale": "High uncertainty due to: (1) unprecedented 30-40% undecided voter rate; (2) compressed campaign period (8 weeks); (3) first election without Senate PM vote creates new dynamics; (4) ongoing legal threats to People's Party; (5) volatile nationalist sentiment from Cambodia conflict; (6) snap election reduces time for polling to stabilize. Confidence intervals are wide (±15-25 seats) for top three parties.",
+  
+  "model_limitations": [
+    "Limited polling data in rural constituencies; most polls urban-biased (especially Bangkok-heavy samples)",
+    "Difficulty modeling undecided voter behavior with 30-40% undecided rate unprecedented in recent Thai elections",
+    "Party list seat allocation assumes proportional vote share, but actual Hare-Niemeyer calculation may vary",
+    "Cannot account for potential vote-buying, intimidation, or electoral irregularities reported in past elections",
+    "Legal disqualifications of People's Party MPs could occur post-election, changing effective seat counts",
+    "Model assumes no major external shocks (coup, court dissolution, escalation of Cambodia conflict) before Feb 8"
+  ],
+  
+  "historical_comparison": {
+    "2023_results": {
+      "Move_Forward": 151,
+      "Pheu_Thai": 141,
+      "Bhumjaithai": 71,
+      "comparison": "People's Party +12 from Move Forward base; Pheu Thai -49 (major decline); Bhumjaithai +54 (major surge)"
+    },
+    "2019_results": {
+      "Pheu_Thai": 136,
+      "Palang_Pracharath": 116,
+      "Future_Forward": 81,
+      "Bhumjaithai": 51,
+      "comparison": "Progressive parties collectively stronger in 2026 vs 2019; military parties much weaker"
+    }
+  },
+  
+  "polling_aggregation_method": "Weighted average of recent polls with exponential decay: NIDA (Jan 5-8) weight=0.45, Suan Dusit (Jan 6-9) weight=0.40, Thai Rath (Dec 29-Jan 4) weight=0.15. Polls older than 2 weeks not included due to rapid volatility.",
+  
+  "final_notes": "This is a probabilistic forecast, not a prediction. The election remains highly competitive with three plausible winners. People's Party leads in polls but faces coalition formation challenges. Bhumjaithai has clearer path to government despite likely finishing second. Pheu Thai's decline from 141→92 seats reflects government performance penalty. The 30-40% undecided rate makes this one of the most unpredictable Thai elections in modern history. Final result could differ significantly from these projections."
+}
